@@ -311,8 +311,28 @@
 	left:60%;
 	top:10%;
 }
+.ly-imgbox01{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	left:60%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox01{
+	opacity:1;
+	transition-delay:3.5s;
+}
+.ly-img01{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+}
 .ly-stxt01 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -340,7 +360,7 @@
 }
 
 .ly-stxt02 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -369,7 +389,7 @@
 }
 
 .ly-stxt03 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -398,7 +418,7 @@
 }
 
 .ly-stxt04 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -427,7 +447,7 @@
 }
 
 .ly-stxt05 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -456,7 +476,36 @@
 }
 
 .ly-stxt06 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
+	font-size: 30px;
+	font-color: #000;
+	position: relative;
+	left: 5%;
+	top: 5%;
+	opacity: 0;
+	margin-top:-71px;
+	animation:ly-stxt06_move 15s;
+	animation-delay:3s;
+	-webkit-animation:ly-stxt06_move 15s;
+	-webkit-animation-delay:3s;
+}
+@keyframes ly-stxt06_move{
+	0% {opacity:0;margin-top:-71px;}
+	40% {opacity:0;margin-top:-71px;}
+	48% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+}
+@-webkit-keyframes ly-stxt06_move{
+	0% {opacity:0;margin-top:-71px;}
+	40% {opacity:0;margin-top:-71px;}
+	48% {opacity:1;margin-top:0;}
+	90% {opacity:1;margin-top:0;}
+	100% {opacity:0;margin-top:0;}
+	
+}
+/*.ly-stxt06 {
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -484,7 +533,7 @@
 }
 
 .ly-stxt07 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -513,7 +562,7 @@
 }
 
 .ly-stxt08 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -542,7 +591,7 @@
 }
 
 .ly-stxt09 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -571,7 +620,7 @@
 }
 
 .ly-stxt10 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	font-color: #000;
 	position: relative;
@@ -657,7 +706,7 @@
 }
 .active .timepoint11 {
 	top:15.5%;
-	transition-delay: 2s;
+	transition-delay: 3s;
 }
 
 /* 盒子 */
@@ -720,16 +769,40 @@
 }
 .active .ly-imgbox11{
 	opacity:1;
-	transition-delay:3.5s;
+	transition-delay:4.5s;
 }
 .ly-img11{
 	position: absolute;
 	width: 100%;
 	bottom: 0;
 }
+.ly-img12{
+	position: absolute;
+	width: 25%;
+	left: 0%;
+	bottom: 0;
+}
+.ly-img13{
+	position: absolute;
+	width: 25%;
+	left: 25%;
+	bottom: 0;
+}
+.ly-img14{
+	position: absolute;
+	width: 25%;
+	left: 50%;
+	bottom: 0;
+}
+.ly-img15{
+	position: absolute;
+	width: 25%;
+	left: 75%;
+	bottom: 0;
+}
 /*文本*/
 .ly-txt11 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	text-shadow: 1px;
 	font-color: #000;
@@ -742,12 +815,12 @@
 
 .active .ly-txt11 {
 	opacity: 1;
-	transition-delay: 3.5s;
+	transition-delay: 2.5s;
 }
 
 
 .ly-txt12 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 20px;
 	text-indent:2em;
 	font-color: #000;
@@ -761,7 +834,7 @@
 
 .active .ly-txt12 {
 	opacity: 1;
-	transition-delay: 4s;
+	transition-delay: 3.5s;
 }
 
 /* 盒子 */
@@ -785,7 +858,7 @@
 	opacity: 0.9;
 	-webkit-transform: scale(1, 1);
 	transform: scale(1, 1);
-	transition-delay: 5s;
+	transition-delay: 6s;
 }
 /*小三角*/
 .ly-triangle12 {
@@ -813,7 +886,7 @@
 }
 /*文本*/
 .ly-txt13 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	text-shadow: 1px;
 	font-color: #000;
@@ -826,12 +899,12 @@
 
 .active .ly-txt13 {
 	opacity: 1;
-	transition-delay: 6s;
+	transition-delay: 1s;
 }
 
 .ly-txt14 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 18px;
 	font-color: #000;
 	position: absolute;
@@ -849,7 +922,74 @@
 	height:500px;
 	transition-delay: 6.5s;
 }
-
+.ly-style{
+	position:absolute;
+	top:60%;
+	left:65%;
+	opacity:1;
+	z-index:100;
+	animation:btn1 15s;
+}
+@keyframes btn1 {
+	0% {
+		opacity:0;
+		left:0%;
+	}
+	70% {
+		opacity:0;
+		left:0%;
+	}
+	100% {
+		opacity:1;
+		left:65%;
+	}
+}
+@-webkit-keyframes btn1 {
+	0% {
+		opacity:0;
+		left:0%;
+	}
+	70% {
+		opacity:0;
+		left:0%;
+	}
+	100% {
+		opacity:1;
+		left:65%;
+	}
+}
+.ly-lk1 {
+	text-decoration:none;
+	font-family: KaiTi;
+	color:#fff;
+	transition:all 0.5s;
+}
+.ly-link1{
+	width:170px;
+	height:60px;
+	border:2px solid #fff;
+	-webkit-border:1px solid #fff;
+	border-radius:30px;
+	font-size: 23px;
+	text-align:center;
+	background: #ff9797;
+	transition:all 0.8s;
+}
+.ly-bt1{
+	position:relative;
+	top:22%;
+	vertical-align:middle;
+}
+a.ly-lk1:hover {
+	color:#ff9797;
+	transition:all 0.5s;
+}
+.ly-link1:hover {
+	background-color:#fff;
+	background-color:rgba(255,255,255,0,2);
+	border:2px solid #BBB;
+	transition:all 0.8s;
+}
 /**                                        第三部分                                  **/
 
 /**时间轴上的点**/
@@ -876,7 +1016,7 @@
 
 /* 盒子 */
 .ly-box21 {
-	width: 15%;
+	width: 60%;
 	height: 600px;
 	border: 2px #CCC;
 	background-color: #fff;
@@ -926,7 +1066,7 @@
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 70%;
+	height: 33%;
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
@@ -934,16 +1074,17 @@
 }
 .active .ly-imgbox21{
 	opacity:1;
-	transition-delay:3.5s;
+	transition-delay:0.5s;
 }
 .ly-img21{
 	position: absolute;
+	left:20%;
 	width: 100%;
 	bottom: 0;
 }
 /*文本*/
 .ly-txt21 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	text-shadow: 1px;
 	font-color: #000;
@@ -956,12 +1097,12 @@
 
 .active .ly-txt21 {
 	opacity: 1;
-	transition-delay: 3.5s;
+	transition-delay: 1s;
 }
 
 
 .ly-txt22 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 13px;
 	text-indent:2em;
 	font-color: #000;
@@ -1026,25 +1167,25 @@
 }
 /*文本*/
 .ly-txt23 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	text-shadow: 1px;
 	font-color: #000;
 	position: absolute;
 	left: 3%;
-	top: 2%;
+	top: 12%;
 	opacity: 0;
 	transition: all 0.5s;
 }
 
 .active .ly-txt23 {
 	opacity: 1;
-	transition-delay: 6s;
+	transition-delay: 3s;
 }
 
 .ly-txt24 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1127,7 +1268,7 @@
 }
 /*文本*/
 .ly-txt25 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	text-shadow: 1px;
 	font-color: #000;
@@ -1145,7 +1286,7 @@
 
 .ly-txt26 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1278,7 +1419,7 @@
 }
 /*文本*/
 .ly-txt31 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	text-shadow: 1px;
 	font-color: #000;
@@ -1296,7 +1437,7 @@
 
 
 .ly-txt32 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 20px;
 	text-indent:2em;
 	font-color: #000;
@@ -1362,7 +1503,7 @@
 }
 /*文本*/
 .ly-txt33 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 30px;
 	text-shadow: 1px;
 	font-color: #000;
@@ -1380,7 +1521,7 @@
 
 .ly-txt34 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 18px;
 	font-color: #000;
 	position: absolute;
@@ -1440,7 +1581,7 @@
 }
 .ly-txt51 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1502,7 +1643,7 @@
 }
 .ly-txt61 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1528,7 +1669,7 @@
 
 .ly-txt71 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1707,7 +1848,7 @@
 }
 .ly-txt72 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1747,7 +1888,7 @@
 
 .ly-txt73 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1809,7 +1950,7 @@
 	transition-delay: 2.5s;
 }
 .ly-txt82 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	text-indent:1em;
 	font-color: #000;
@@ -1847,14 +1988,14 @@
 }
 
 .ly-box82 {
-	width: 54%;
+	width: 70%;
 	height: 600px;
 	border: 2px #CCC;
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.6);
 	border-radius: 8px;
 	position: absolute;
-	left: 42%;
+	left: 23%;
 	top:10%;
 	overflow: hidden;
 	opacity: 0;
@@ -1897,7 +2038,7 @@
 
 .ly-txt84 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: Times New Roman;
 	font-size: 15px;
 	font-color: #000;
 	position: absolute;
@@ -1913,10 +2054,10 @@
 
 .active .ly-txt84 {
 	height:500px;
-	transition-delay: 6.5s;
+	transition-delay: 3.5s;
 }
 .ly-txt90 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1934,7 +2075,7 @@
 	transition-delay: 4.5s;
 }
 .ly-txt91 {
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -1949,14 +2090,13 @@
 
 .active .ly-txt91 {
 	opacity:1;
-	transition-delay: 7.0s;
+	transition-delay: 3.5s;
 }
 /*图片*/
 .ly-imgbox91{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-	height: 80%;
 	border-radius: 8px;
 	opacity:0;
 	overflow: hidden;
@@ -1964,23 +2104,97 @@
 }
 .active .ly-imgbox91{
 	opacity:1;
-	transition-delay:6.5s;
+	transition-delay:5s;
 }
-.ly-img91{
+.ly-imgbox92{
+	position: absolute;
+	width: 100%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox92{
+	opacity:1;
+	transition-delay:5s;
+}
+.ly-imgbox93{
 	position: absolute;
 	width: 100%;
 	bottom: 0;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgbox93{
+	opacity:1;
+	transition-delay:5s;
+}
+.ly-img91{
+	position: absolute;
+	width:20%;
+	left:20%;
+	bottom:0;
+}
+.ly-img92{
+	position: absolute;
+	width:20%;
+	left:40%;
+	bottom: 0;
+}
+.ly-img93{
+	position: absolute;
+	width:20%;
+	left:60%;
+	bottom: 0;
+}
+.ly-img94{
+	position: absolute;
+	width:20%;
+	left:20%;
+	bottom: 0;
+}
+.ly-img95{
+	position: absolute;
+	width:20%;
+	left:40%;
+	bottom: 0;
+}
+.ly-img96{
+	position: absolute;
+	width:20%;
+	left:60%;
+	bottom: 0;
+}
+.ly-img97{
+	position: absolute;
+	width:20%;
+	left:20%;
+	bottom: 0;
+}
+.ly-img98{
+	position: absolute;
+	width:20%;
+	left:40%;
+	bottom: 0;
+}
+.ly-img99{
+	position: absolute;
+	width:20%;
+	left:60%;
+	bottom: 0;
 }
 .ly-box91 {
-	width: 15%;
-	height: 450px;
+	width: 70%;
+	height: 600px;
 	border: 2px #CCC;
 	background-color: #fff;
 	background-color: rgba(255,255,255,0.6);
 	border-radius: 8px;
 	position: absolute;
-	left: 42%;
-	bottom:18%;
+	left: 23%;
+    top:10%;
 	overflow: hidden;
 	opacity: 0;
 	-webkit-transform: scale(0.5, 0.5);
@@ -1991,7 +2205,7 @@
 	opacity: 0.9;
 	-webkit-transform: scale(1, 1);
 	transform: scale(1, 1);
-	transition-delay: 5s;
+	transition-delay: 1s;
 }
 .xx91 {
 	height: 450px;
@@ -2020,6 +2234,26 @@
 	top:23.5%;
 	transition-delay: 1.5s;
 }
+.ly-imgboxlast{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 90%;
+	border-radius: 8px;
+	opacity:0;
+	overflow: hidden;
+	transition:all 0.5s;
+}
+.active .ly-imgboxlast{
+	opacity:1;
+	transition-delay:4.5s;
+}
+.ly-imglast{
+	position: absolute;
+	width:100%;
+	bottom:0;
+}
+
 .ly-box92 {
 	width: 15%;
 	height: 450px;
@@ -2113,7 +2347,7 @@
 }
 .ly-txt92 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
@@ -2153,7 +2387,7 @@
 
 .ly-txt93 {
 	text-indent:2em;
-	font-family: Microsoft YaHei;
+	font-family: KaiTi;
 	font-size: 14px;
 	font-color: #000;
 	position: absolute;
